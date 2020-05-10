@@ -14,4 +14,3 @@ def solve(board, cage_index):
                         board[y][x] = 0
                 return
     print_board(board)
-    print("This is the solution.")
