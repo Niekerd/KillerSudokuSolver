@@ -110,11 +110,11 @@ def find_next(bo, pos):
             return find_next(bo, (pos[0], nextColumn))
 
     
-print_board(expertBoard)
+print_board(board)
 t = process_time()
-solve(expertBoard, [0,0])
+solve(board, [0,0])
 print("_______________________")
-print_board(expertBoard)
+print_board(board)
 elapsed_time = process_time() - t
 elapsed_ms = elapsed_time * 1000.0
 print("Solving this puzzle took " + str(steps) + " steps and " + str(elapsed_ms) + "ms.")
